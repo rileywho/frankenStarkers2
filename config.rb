@@ -19,3 +19,12 @@ output_style = :nested
 color_output = false
 
 preferred_syntax = :scss
+
+# Moves the style.css file out of the css folder
+require 'fileutils'
+on_stylesheet_saved do |file|
+  if File.exists?(file) && File.basename(file) == "style.css"
+    puts "Moving: #{file}"
+    FileUtils.mv(file, File.dirname(file) + "/../" + File.basename(file))
+  end
+end	
