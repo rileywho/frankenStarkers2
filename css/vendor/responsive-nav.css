@@ -1,0 +1,58 @@
+/*! responsive-nav.js 1.0.32 by @viljamis */
+/*
+===========================
+VARIABLES
+===========================
+*/
+/* line 7, ../../sass/vendor/responsive-nav.scss */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none; }
+
+/* line 14, ../../sass/vendor/responsive-nav.scss */
+.nav-collapse li {
+  width: 100%;
+  display: block; }
+
+/* line 18, ../../sass/vendor/responsive-nav.scss */
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+/* line 26, ../../sass/vendor/responsive-nav.scss */
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+/* line 29, ../../sass/vendor/responsive-nav.scss */
+.disable-pointer-events {
+  pointer-events: none !important; }
+
+/* line 32, ../../sass/vendor/responsive-nav.scss */
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+@media screen and (min-width: 768px) {
+  /* line 42, ../../sass/vendor/responsive-nav.scss */
+  .js .nav-collapse {
+    position: relative; }
+
+  /* line 45, ../../sass/vendor/responsive-nav.scss */
+  .js .nav-collapse.closed {
+    max-height: none; }
+
+  /* line 48, ../../sass/vendor/responsive-nav.scss */
+  .nav-toggle {
+    display: none; } }
