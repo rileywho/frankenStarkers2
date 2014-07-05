@@ -1,0 +1,33 @@
+/* Header */
+header {
+	padding: 40px 0px;
+	@include container(100%);
+}
+.logo {
+	@include span(4);
+	a {
+		font-size: $font-size-x-large;
+	}
+	p {
+		color: $brand-primary;
+		margin: 8px 0;
+		font-size: $font-size-medium;
+	}
+}
+nav{
+	margin: 22px 0;
+	@include span(8 at 5);
+}
+.menu {
+	float: right;
+	ul {
+		li {
+			font-size: $font-size-medium;
+			display: inline;
+			padding: 0px 10px;
+		}
+	}
+}
+.nav-toggle{
+	float: right;
+}

@@ -1,6 +1,22 @@
 /* Layout */
+$susy: (
+  columns: 12,
+  gutters: .25,
+  gutter-position: inside,
+);
 
 body {
 	background: $bg-color;
+	@include container(90%);
+}
+
+/* Header Layout */
+header {
 	@include container(100%);
+}
+.logo {
+	@include span(4);
+}
+nav {
+	@include span(8 at 5);
 }

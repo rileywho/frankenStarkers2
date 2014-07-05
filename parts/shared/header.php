@@ -1,7 +1,7 @@
 <header>	
-	<div>
+	<div class="logo">
 		<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
-		<h3><?php bloginfo( 'description' ); ?></h3>
+		<p><?php bloginfo( 'description' ); ?></p>
 	</div>
 	<nav id="access" class="nav-collapse" role="navigation">
 		<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>

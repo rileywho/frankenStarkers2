@@ -17,10 +17,13 @@ License URI:
 General comments (optional).
 */
 @import "compass/reset";
+@import "compass/typography/links";
 @import "susy";
 @import "ie";
 @import "bits";
+@import "mixins";
 @import "layout";
 @import "type";
 @import "images";
-@import "vendor/responsive-nav"
+@import "header";
+@import "vendor/responsive-nav";

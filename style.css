@@ -79,10 +79,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * <![endif]--> */
 /* Colors, spacing and other little things */
 /* Layout */
-/* line 3, ../sass/_layout.scss */
+/* line 8, ../sass/_layout.scss */
 body {
   background: #e7e7e7;
-  max-width: 100%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto; }
   /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
@@ -91,8 +91,115 @@ body {
     display: block;
     clear: both; }
 
+/* Header Layout */
+/* line 14, ../sass/_layout.scss */
+header {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
+  header::after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/* line 17, ../sass/_layout.scss */
+.logo {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+/* line 20, ../sass/_layout.scss */
+nav {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
 /* Typeography */
+/* line 13, ../sass/_type.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p {
+  font-family: "vollkorn"; }
+
+/* line 25, ../sass/_type.scss */
+a {
+  text-decoration: none;
+  color: #005886; }
+  /* line 4, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_hover-link.scss */
+  a:hover, a:focus {
+    text-decoration: underline; }
+
 /* Images */
+/* Header */
+/* line 2, ../sass/_header.scss */
+header {
+  padding: 40px 0px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
+  header::after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/* line 6, ../sass/_header.scss */
+.logo {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+  /* line 8, ../sass/_header.scss */
+  .logo a {
+    font-size: 30px; }
+  /* line 11, ../sass/_header.scss */
+  .logo p {
+    color: #005886;
+    margin: 8px 0;
+    font-size: 18px; }
+
+/* line 17, ../sass/_header.scss */
+nav {
+  margin: 22px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+/* line 21, ../sass/_header.scss */
+.menu {
+  float: right; }
+  /* line 24, ../sass/_header.scss */
+  .menu ul li {
+    font-size: 18px;
+    display: inline;
+    padding: 0px 10px; }
+
+/* line 31, ../sass/_header.scss */
+.nav-toggle {
+  float: right; }
+
 /*! responsive-nav.js 1.0.32 by @viljamis */
 /*
 ===========================
