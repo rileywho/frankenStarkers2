@@ -5,8 +5,11 @@ header {
 }
 .logo {
 	@include span(4);
+	@include breakpoint($peasant){
+		@include span(8);
+	}
 	a {
-		font-size: $font-size-x-large;
+		font-size: $font-size-large;
 	}
 	p {
 		color: $brand-primary;
@@ -15,10 +18,10 @@ header {
 	}
 }
 nav{
-	margin: 22px 0;
+	margin: 16px 0;
 	@include span(8 at 5);
 }
-.menu {
+.menu-header {
 	float: right;
 	ul {
 		li {

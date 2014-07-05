@@ -18,6 +18,8 @@ General comments (optional).
 */
 @import "compass/reset";
 @import "compass/typography/links";
+@import "compass/layout/sticky-footer";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 @import "susy";
 @import "ie";
 @import "bits";

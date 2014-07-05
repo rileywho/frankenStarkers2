@@ -78,10 +78,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 /* Colors, spacing and other little things */
+/* Break Points */
 /* Layout */
-/* line 8, ../sass/_layout.scss */
+/* line 10, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%; }
+
+/* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px; }
+  /* line 18, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/layout/_sticky-footer.scss */
+  #root #root_footer {
+    height: 54px; }
+
+/* line 20, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px; }
+
+/* line 12, ../sass/_layout.scss */
 body {
-  background: #e7e7e7;
+  background: #f3f3f3;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto; }
@@ -90,38 +112,6 @@ body {
     content: " ";
     display: block;
     clear: both; }
-
-/* Header Layout */
-/* line 14, ../sass/_layout.scss */
-header {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
-  header::after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-/* line 17, ../sass/_layout.scss */
-.logo {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%; }
-
-/* line 20, ../sass/_layout.scss */
-nav {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 66.66667%;
-  float: right;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%; }
 
 /* Typeography */
 /* line 13, ../sass/_type.scss */
@@ -167,18 +157,28 @@ header {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%; }
-  /* line 8, ../sass/_header.scss */
-  .logo a {
-    font-size: 30px; }
+  @media (max-width: 650px) {
+    /* line 6, ../sass/_header.scss */
+    .logo {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 66.66667%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%; } }
   /* line 11, ../sass/_header.scss */
+  .logo a {
+    font-size: 24px; }
+  /* line 14, ../sass/_header.scss */
   .logo p {
     color: #005886;
     margin: 8px 0;
     font-size: 18px; }
 
-/* line 17, ../sass/_header.scss */
+/* line 20, ../sass/_header.scss */
 nav {
-  margin: 22px 0;
+  margin: 16px 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -187,16 +187,16 @@ nav {
   padding-left: 0.83333%;
   padding-right: 0.83333%; }
 
-/* line 21, ../sass/_header.scss */
-.menu {
+/* line 24, ../sass/_header.scss */
+.menu-header {
   float: right; }
-  /* line 24, ../sass/_header.scss */
-  .menu ul li {
+  /* line 27, ../sass/_header.scss */
+  .menu-header ul li {
     font-size: 18px;
     display: inline;
     padding: 0px 10px; }
 
-/* line 31, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .nav-toggle {
   float: right; }
 
