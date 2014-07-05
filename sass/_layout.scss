@@ -1,0 +1,6 @@
+/* Layout */
+
+body {
+	background: $bg-color;
+	@include container(100%);
+}

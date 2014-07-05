@@ -78,5 +78,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 /* Colors, spacing and other little things */
+/* Layout */
+/* line 3, ../sass/_layout.scss */
+body {
+  background: #e7e7e7;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
+  body::after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 /* Typeography */
 /* Images */
