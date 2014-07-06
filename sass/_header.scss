@@ -13,12 +13,12 @@ header {
 	}
 	p {
 		color: $brand-primary;
-		margin: 8px 0;
 		font-size: $font-size-medium;
+		margin: 8px 0;
 	}
 }
 nav{
-	margin: 16px 0;
+	margin: 18px 0;
 	@include span(8 at 5);
 }
 .menu-header {

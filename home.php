@@ -17,8 +17,21 @@
 <section id="root">
 	<?php if ( have_posts() ): ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-				<article>
-					<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<article class="work-links">
+					<a href="<?php the_permalink(); ?>">
+						<div class="cover"><p><?php the_field('title'); ?></p></div>
+						<figure>
+	 						<?php 
+						  $image = get_field('home_img');
+						  $atts = array(
+						    'imageid' => $image, 
+						    'size1' => '0', 
+						    'size2' =>'600', 
+						    'size3' =>'1000'
+						  );  
+						  echo tevkori_responsive_shortcode($atts) ; ?>              
+						</figure>
+					</a>
 				</article>
 		<?php endwhile; ?>	
 		<?php else: ?>

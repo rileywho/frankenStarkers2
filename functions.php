@@ -32,8 +32,6 @@
 	
 	// Enable support for Post Thumbnails, and declare two sizes.
 	add_theme_support('post-thumbnails');
-	set_post_thumbnail_size( 672, 372, true );
-	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 	
 	// Custom excerpt length
 	function custom_excerpt_length( $length ) {

@@ -12,5 +12,25 @@ $susy: (
 body {
 	background: $bg-color;
 	@include container(90%);
+	@include breakpoint($dragon2){
+		@include container(1300px);
+	}
 }
 
+section {
+	@include container(100%);
+}
+.work-links {
+	@include span(6);
+	@include breakpoint($peasant){
+		@include span(12);
+	}
+	a {
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+	}
+}
