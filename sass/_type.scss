@@ -1,8 +1,10 @@
 /* Typeography */
 
 $font-family-serif: "vollkorn";
+$font-size-small: 14px;
 $font-size-base: 16px;
 $font-size-medium: $font-size-base + 2px;
+$font-size-x-medium: $font-size-base + 4px;
 $font-size-large: 24px;
 $font-size-x-large: 30px;
 $font-size-xx-large: 36px;
@@ -19,10 +21,41 @@ h6,
 a,
 li,
 p {
+	color: $brand-primary;
 	font-family: $font-family-serif;
+	-webkit-font-smoothing:antialiased
 }
 
-a{
-	@include hover-link;
-	@include link-colors($brand-primary)
+a {
+	/* border-bottom: 1px red solid; */
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+
+.p-intro {
+	font-size: $font-size-large;
+	line-height: $font-size-large + 6px;
+}
+
+
+.about p{
+	font-size: $font-size-medium;
+	line-height: $font-size-medium + 6px;
+	@include breakpoint($peasant){
+		font-size: $font-size-large;
+		line-height: $font-size-large + 6px;
+	}
+}	
+.project h1{
+	font-size: $font-size-large;
+	@include breakpoint($peasant){
+
+	}
+}
+.project p{
+	color: #444;
+}
+.contact-info p {
+	margin: 20px 0px;
 }

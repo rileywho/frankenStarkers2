@@ -14,6 +14,12 @@
  */
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+
+<section>
+	<article class="intro">
+		<p>Graphic designer with a strong focus on user experience and front-end development.</p>
+	</article>
+</section>
 <section id="root">
 	<?php if ( have_posts() ): ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -26,7 +32,7 @@
 						  $atts = array(
 						    'imageid' => $image, 
 						    'size1' => '0', 
-						    'size2' =>'600', 
+						    'size2' =>'650', 
 						    'size3' =>'1000'
 						  );  
 						  echo tevkori_responsive_shortcode($atts) ; ?>              

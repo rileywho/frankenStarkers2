@@ -6,8 +6,8 @@
 Theme Name: Frankenstarkers2
 Theme URI: http://wordpress.org/
 Description: The 2010 default theme for WordPress.
-Author: wordpressdotorg
-Author URI: http://wordpress.org/
+Author: Riley Hollobaugh
+Author URI: rileyhollobaugh.com
 Version: 1.0
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
 
@@ -16,6 +16,7 @@ License URI:
 
 General comments (optional).
 */
+/* Library Imports */
 /* line 5, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -72,13 +73,97 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+/* Atoms */
 /* Colors, spacing and other little things */
 /* Break Points */
+/* Typeography */
+/* line 15, ../sass/_type.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p {
+  color: #005886;
+  font-family: "vollkorn";
+  -webkit-font-smoothing: antialiased; }
+
+/* line 29, ../sass/_type.scss */
+a {
+  /* border-bottom: 1px red solid; */
+  text-decoration: none;
+  vertical-align: baseline; }
+
+/* line 36, ../sass/_type.scss */
+.p-intro, .intro {
+  font-size: 24px;
+  line-height: 30px; }
+
+/* line 42, ../sass/_type.scss */
+.about p {
+  font-size: 18px;
+  line-height: 24px; }
+  @media (max-width: 650px) {
+    /* line 42, ../sass/_type.scss */
+    .about p {
+      font-size: 24px;
+      line-height: 30px; } }
+
+/* line 50, ../sass/_type.scss */
+.project h1 {
+  font-size: 24px; }
+
+/* line 56, ../sass/_type.scss */
+.project p {
+  color: #444; }
+
+/* line 59, ../sass/_type.scss */
+.contact-info p {
+  margin: 20px 0px; }
+
+/* Images */
+/* line 2, ../sass/_images.scss */
+img {
+  display: block;
+  width: 100%; }
+
+/* line 6, ../sass/_images.scss */
+.cover {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  overflow: hidden; }
+
+/* line 17, ../sass/_images.scss */
+.cover p {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 600px;
+  color: #fff;
+  transition: all 0.4s ease-in-out; }
+
+/* line 25, ../sass/_images.scss */
+.cover:hover {
+  background: rgba(0, 0, 0, 0.3); }
+
+/* line 28, ../sass/_images.scss */
+.cover:hover p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* Molecules */
 /* Layout */
 /* line 10, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
@@ -103,8 +188,8 @@ html, body {
 
 /* line 12, ../sass/_layout.scss */
 body {
-  background: #f3f3f3;
-  max-width: 90%;
+  background: #fff;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
   /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
@@ -112,10 +197,21 @@ body {
     content: " ";
     display: block;
     clear: both; }
-  @media (min-width: 1400px) {
+  @media (max-width: 1070px) {
     /* line 12, ../sass/_layout.scss */
     body {
-      max-width: 1300px;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto; }
+      /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
+      body::after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  @media (max-width: 650px) {
+    /* line 12, ../sass/_layout.scss */
+    body {
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto; }
       /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
@@ -124,108 +220,10 @@ body {
         display: block;
         clear: both; } }
 
-/* line 20, ../sass/_layout.scss */
-section {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
-  section::after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-/* line 23, ../sass/_layout.scss */
-.work-links {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 50%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%; }
-  @media (max-width: 650px) {
-    /* line 23, ../sass/_layout.scss */
-    .work-links {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 100%;
-      float: left;
-      padding-left: 0.83333%;
-      padding-right: 0.83333%; } }
-  /* line 28, ../sass/_layout.scss */
-  .work-links a {
-    display: block;
-    position: relative;
-    width: 100%; }
-  /* line 33, ../sass/_layout.scss */
-  .work-links img {
-    width: 100%; }
-
-/* Typeography */
-/* line 13, ../sass/_type.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-li,
-p {
-  font-family: "vollkorn"; }
-
-/* line 25, ../sass/_type.scss */
-a {
-  text-decoration: none;
-  color: #005886; }
-  /* line 4, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_hover-link.scss */
-  a:hover, a:focus {
-    text-decoration: underline; }
-
-/* Images */
-/* line 2, ../sass/_images.scss */
-a {
-  position: relative; }
-
-/* line 5, ../sass/_images.scss */
-.cover {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: transparent;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform-style: preserve-3d;
-  overflow: hidden; }
-
-/* line 16, ../sass/_images.scss */
-.cover p {
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  top: 600px;
-  color: #fff;
-  transition: all 0.4s ease-in-out; }
-
-/* line 24, ../sass/_images.scss */
-.cover:hover {
-  background: rgba(0, 0, 0, 0.4); }
-
-/* line 27, ../sass/_images.scss */
-.cover:hover p {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
 /* Header */
 /* line 2, ../sass/_header.scss */
 header {
-  padding: 40px 0px;
+  padding: 50px 0px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
@@ -240,7 +238,7 @@ header {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 33.33333%;
+  width: 50%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%; }
@@ -256,37 +254,196 @@ header {
       padding-right: 0.83333%; } }
   /* line 11, ../sass/_header.scss */
   .logo a {
-    font-size: 24px; }
-  /* line 14, ../sass/_header.scss */
+    font-size: 18px; }
+    @media (max-width: 650px) {
+      /* line 11, ../sass/_header.scss */
+      .logo a {
+        font-size: 20px; } }
+  /* line 17, ../sass/_header.scss */
   .logo p {
     color: #005886;
-    font-size: 18px;
+    font-size: 16px;
     margin: 8px 0; }
 
-/* line 20, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 nav {
-  margin: 18px 0;
+  margin: 0px 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 50%;
   float: right;
   padding-left: 0.83333%;
   padding-right: 0.83333%; }
 
-/* line 24, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 .menu-header {
   float: right; }
-  /* line 27, ../sass/_header.scss */
-  .menu-header ul li {
-    font-size: 18px;
-    display: inline;
-    padding: 0px 10px; }
+  /* line 30, ../sass/_header.scss */
+  .menu-header ul {
+    height: 50px;
+    line-height: 24px; }
+    /* line 33, ../sass/_header.scss */
+    .menu-header ul li:nth-last-child(1) {
+      margin-right: 0px; }
+    /* line 36, ../sass/_header.scss */
+    .menu-header ul li {
+      display: block;
+      margin-right: 30px;
+      float: left;
+      font-size: 16px;
+      padding: 0px 0px;
+      width: 65px; }
+      /* line 44, ../sass/_header.scss */
+      .menu-header ul li a {
+        position: relative; }
+      /* line 47, ../sass/_header.scss */
+      .menu-header ul li a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 2px;
+        border-bottom: solid 1px #fff;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s; }
+      /* line 57, ../sass/_header.scss */
+      .menu-header ul li a:hover:after {
+        border-bottom: solid 1px #005886; }
 
-/* line 34, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 .nav-toggle {
-  float: right; }
+  float: right;
+  font-size: 18px;
+  margin: 14px 0px 0px 0px; }
 
+/* line 71, ../sass/_header.scss */
+.home .menu-item-16 a:after {
+  border-bottom: solid 1px #005886; }
+
+/* line 78, ../sass/_header.scss */
+.journal .menu-item-13 a:after {
+  border-bottom: solid 1px #005886; }
+
+/* line 85, ../sass/_header.scss */
+.contact .menu-item-15 a:after {
+  border-bottom: solid 1px #005886; }
+
+/* Home Page Styleing */
+/* line 3, ../sass/_home.scss */
+.intro {
+  padding-bottom: 60px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+  @media (max-width: 650px) {
+    /* line 3, ../sass/_home.scss */
+    .intro {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%; } }
+
+/* line 11, ../sass/_home.scss */
+section {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
+  section::after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/* line 15, ../sass/_home.scss */
+.work-links {
+  margin-top: 0.83333%;
+  margin-bottom: 0.83333%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+  @media (max-width: 650px) {
+    /* line 15, ../sass/_home.scss */
+    .work-links {
+      margin: 0px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      padding: 0px; } }
+  /* line 24, ../sass/_home.scss */
+  .work-links a {
+    display: block;
+    position: relative;
+    width: 100%; }
+  /* line 29, ../sass/_home.scss */
+  .work-links picture {
+    display: block; }
+
+/* Contact Styles */
+/* line 3, ../sass/_contact.scss */
+.about {
+  margin: 10px 0 50px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+/* line 7, ../sass/_contact.scss */
+.contact-info {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+/* line 10, ../sass/_contact.scss */
+.profile-img {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+  /* line 12, ../sass/_contact.scss */
+  .profile-img figure {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+
+/* Just in case */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* Vendor Plugins */
 /*! responsive-nav.js 1.0.32 by @viljamis */
 /*
 ===========================

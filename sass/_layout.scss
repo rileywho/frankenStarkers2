@@ -10,27 +10,15 @@ $susy: (
 @include sticky-footer(54px);
 
 body {
-	background: $bg-color;
-	@include container(90%);
-	@include breakpoint($dragon2){
-		@include container(1300px);
+	background: #fff;
+	@include container(1000px);
+	// @include breakpoint($dragon2){
+	// 	@include container(1300px);
+	// }
+	@include breakpoint(max-width 1070px){
+		@include container(95%);
 	}
-}
-
-section {
-	@include container(100%);
-}
-.work-links {
-	@include span(6);
 	@include breakpoint($peasant){
-		@include span(12);
-	}
-	a {
-		display: block;
-		position: relative;
-		width: 100%;
-	}
-	img {
-		width: 100%;
+		@include container(100%);
 	}
 }

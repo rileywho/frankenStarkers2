@@ -6,8 +6,8 @@
 Theme Name: Frankenstarkers2
 Theme URI: http://wordpress.org/
 Description: The 2010 default theme for WordPress.
-Author: wordpressdotorg
-Author URI: http://wordpress.org/
+Author: Riley Hollobaugh
+Author URI: rileyhollobaugh.com
 Version: 1.0
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
 
@@ -16,16 +16,31 @@ License URI:
 
 General comments (optional).
 */
+
+/* Library Imports */
 @import "compass/reset";
 @import "compass/typography/links";
 @import "compass/layout/sticky-footer";
+@import "compass/css3/transition";
 @import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 @import "susy";
-@import "ie";
+
+
+/* Atoms */
 @import "bits";
-@import "mixins";
-@import "layout";
 @import "type";
 @import "images";
+@import "mixins";
+
+/* Molecules */
+@import "layout";
 @import "header";
+@import "home";
+@import "contact";
+@import "portfolio-1";
+
+/* Just in case */
+@import "ie";
+
+/* Vendor Plugins */
 @import "vendor/responsive-nav";

@@ -1,0 +1,17 @@
+/* Contact Styles */
+
+.about {
+	margin: 10px 0 50px 0;
+	@include span(6);
+}
+.contact-info {
+	@include span(6);
+}
+.profile-img {
+	@include span(6 at 7);
+	figure {
+		@include span(6 at 4);
+	}
+}
+
+

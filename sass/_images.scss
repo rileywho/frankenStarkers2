@@ -1,7 +1,8 @@
 /* Images */
-a{
-	position:relative;
-}
+img {
+    display: block;
+    width: 100%;
+  }
 .cover{
 	position: absolute;
   display:block;
@@ -22,7 +23,7 @@ color: #fff;
  transition: all 0.4s ease-in-out;
 }
 .cover:hover{
-  background: rgba(0,0,0,.4);
+  background: rgba(0,0,0,.3);
 }
 .cover:hover p{
   position: relative;
