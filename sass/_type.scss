@@ -1,61 +1,64 @@
 /* Typeography */
 
 $font-family-serif: "vollkorn";
-$font-size-small: 14px;
-$font-size-base: 16px;
-$font-size-medium: $font-size-base + 2px;
-$font-size-x-medium: $font-size-base + 4px;
-$font-size-large: 24px;
-$font-size-x-large: 30px;
-$font-size-xx-large: 36px;
-$font-size-xxx-large: 48px;
+// $font-size-small: 14px;
+// $font-size-base: 16px;
+// $font-size-medium: $font-size-base + 2px;
+// $font-size-x-medium: $font-size-base + 4px;
+// $font-size-large: 24px;
+// $font-size-x-large: 30px;
+// $font-size-xx-large: 36px;
+// $font-size-xxx-large: 48px;
+html {font-size: 1.125em;}
 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-li,
-p {
-	color: $brand-primary;
-	font-family: $font-family-serif;
-	-webkit-font-smoothing:antialiased
+body {
+  background-color: white;
+  color: #222;
+  font-family: "kepler-std", helvetica,Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: $line-height-base;
+  -webkit-font-smoothing:antialiased;
 }
 
+p { @include v-spacing(0,.5em);}
+h1, h2, h3, h4 {
+	color: $brand-primary;
+  font-weight: inherit;
+  line-height: 1.2;
+  @include v-spacing(0,.25em);
+  // 1.414em
+}
+
+h1 {
+  font-size: 3.157em;
+  margin-top: 0;
+}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+.font-xx-large{ font-size: 3.157em;}
+.font-x-large{  font-size: 2.369em;}
+.font-large{    font-size: 1.777em;}
+.font-medium{   font-size: 1.333em;}
+.font-h-small{   font-size: 1.2em;}
+
+small, .font_small {font-size: 0.707em;}
+
 a {
-	/* border-bottom: 1px red solid; */
+	color: $brand-primary;
 	text-decoration: none;
 	vertical-align: baseline;
 }
 
-
-.p-intro {
-	font-size: $font-size-large;
-	line-height: $font-size-large + 6px;
+.large-header{
+	font-size: 3.998em;
 }
-
-
-.about p{
-	font-size: $font-size-medium;
-	line-height: $font-size-medium + 6px;
-	@include breakpoint($peasant){
-		font-size: $font-size-large;
-		line-height: $font-size-large + 6px;
-	}
-}	
-.project h1{
-	font-size: $font-size-large;
-	@include breakpoint($peasant){
-
-	}
-}
-.project p{
-	color: #444;
-}
-.contact-info p {
-	margin: 20px 0px;
+.font-h-small{
+  color: $brand-primary-light;
+  border-bottom: 1px $brand-primary-light solid;
 }

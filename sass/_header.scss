@@ -1,34 +1,35 @@
 /* Header */
 header {
-	padding: 50px 0px;
+	@include v-spacing(2em,2em);
+
 	@include container(100%);
+	article{
+		@include span(12);
+	}
 }
+
 .logo {
 	@include span(6);
 	@include breakpoint($peasant){
 		@include span(8);
 	}
 	a {
-		font-size: $font-size-medium;
 		@include breakpoint($peasant){
-		font-size: $font-size-x-medium;
 		}
 	}
 	p {
 		color: $brand-primary;
-		font-size: $font-size-base;
-		margin: 8px 0;
+		// margin: 8px 0;
 	}
+	padding: 0px;
 }
 
 nav {
-	margin: 0px 0;
 	@include span(6 at 7);
 }
 .menu-header {
 	float: right;
 	ul {
-		height: 50px;
 		line-height: 24px;
 		li:nth-last-child(1) {
 			margin-right: 0px;
@@ -38,9 +39,9 @@ nav {
 			margin-right: 30px;
 			float: left;
 			// display: inline;
-			font-size: $font-size-base;
+			// font-size: $font-size-base;
 			padding: 0px 0px;
-			width: 65px;
+			width: auto;
 			a {
 				position: relative;
 			}
@@ -62,7 +63,6 @@ nav {
 }
 .nav-toggle {
 	float: right;
-	font-size: $font-size-medium;
 	margin: 14px 0px 0px 0px
 }
 

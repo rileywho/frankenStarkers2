@@ -1,13 +1,16 @@
 /* Colors, spacing and other little things */
 
-$brand-primary: #005886;
+$brand-primary: #000;
 $bg-color: #F3F3F3;
 $gray-light: #D0CECE;
-
-$brand-primary-light: tint($brand-primary, 70);
+// 005886
+$brand-primary-light: tint($brand-primary, 60);
 
 /* Break Points */
 $dragon2: 1400px;
 $dragon: max-width 1500px;
 $knight: max-width 1250px;
+$soldier: max-width 1000px;
 $peasant: max-width 650px;
+
+$line-height-base: 1.45;

@@ -17,11 +17,22 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<section>
+<section class="body">
 	<article class="about">
+		<h4 class="font-h-small">About</h4>
 		<p>Hello. I'm a graphic designer with a strong focus on user experience and front-end development. Born and raised in Seattle I spend my free time geeking out over technology, playing European board games, and learning new things.</p>
 	</article>
-	<article class="profile-img">
+	<article class="skills">
+		<h4 class="font-h-small">What I can do</h4>
+	</article>
+	<article class="contact-info">
+		<h4 class="font-h-small">Contact</h4>
+		<p>I'm currently available for full time positions, internship, or contract work.</p>
+		<p class="emailme">Email me at <a href="mailto:rileyhollobaugh@gmail.com">rileyhollobaugh@gmail.com</a></p>
+		<p class="social"><a class="social" href="https://twitter.com/HollobaughR" target="_blank" >Twitter</a> /<a href="https://linkedin.com/pub/riley-hollobaugh/65/62a/222/" class="social" target="_blank">Linkedin</a>/<a href="http://instagram.com/rhwells" class="social" target="_blank">Instagram</a></p>
+	</article>
+</section>
+<!-- <article class="profile-img">
 		<figure>
 	 		<?php 
 				$image = get_field('profile_img');
@@ -33,15 +44,5 @@
 				);  
 				echo tevkori_responsive_shortcode($atts) ; ?>              
 		</figure>
-	</article>
-</section>
-<section>
-	<article class="contact-info">
-		<h2>Contact</h2>
-		<p>I'm currently available for full time or contract work.</p>
-		<p class="emailme">Email me at <a href="mailto:rileyhollobaugh@gmail.com">rileyhollobaugh@gmail.com</a></p>
-		<p class="social"><a class="social" href="https://twitter.com/HollobaughR" target="_blank" >Twitter</a> /<a href="https://linkedin.com/pub/riley-hollobaugh/65/62a/222/" class="social" target="_blank">Linkedin</a>/<a href="http://instagram.com/rhwells" class="social" target="_blank">Instagram</a></p>
-	</article>
-</section>
-
+	</article> -->
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

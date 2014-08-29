@@ -1,21 +1,19 @@
 /* Home Page Styleing */
 
 .intro {
-	@extend .p-intro;
-	padding-bottom: 60px;
-	@include span(6 at 7);
+	// @extend .p-intro;
+	// padding-bottom: 60px;
+	@include v-spacing(.5em,2em);
+	@include span(4);
 	@include breakpoint($peasant){
 		@include span(12);
 	}
-}
-section {
-	@include container(100%);
 }
 
 .work-links {
 	margin-top: gutter();
 	margin-bottom: gutter();
-	@include span(6);
+	@include span(4);
 	@include breakpoint($peasant){
 		margin: 0px;
 		@include span(12);

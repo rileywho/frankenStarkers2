@@ -1,0 +1,33 @@
+/* Consistant Verticle spacing */
+@mixin v-spacing($top: 0px, $bottom: 0px, $type: margin) {
+	@if $type == margin{
+		margin-top: $line-height-base * $top;
+  	margin-bottom: $line-height-base * $bottom;
+	}
+  @if $type == padding {
+  	padding-top: $line-height-base * $top;
+  	padding-bottom: $line-height-base * $bottom;
+  }
+}
+
+@mixin layout-1 {
+	@include span(8);
+		@include push(2 of 12);
+		@include post(2 of 12);
+		@include breakpoint($peasant) { 
+			@include span(12);
+			@include push(0 of 12);
+			@include post(0 of 12);
+		}
+
+}
+@mixin layout-center($num) {
+	@include span($num);
+		@include push(((12 - $num)/2) of 12);
+		@include post(((12 - $num)/2) of 12);
+}
+@mixin mobile{
+	@include breakpoint($peasant){
+		@include layout-center(11);
+	}
+}

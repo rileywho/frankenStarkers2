@@ -8,17 +8,46 @@ $susy: (
 
 
 @include sticky-footer(54px);
-
-body {
-	background: #fff;
-	@include container(1000px);
+.fullwidth {
+	@include container(100%);
+}
+.body {
+	// background: #fff;
+	@include container(1300px);
 	// @include breakpoint($dragon2){
 	// 	@include container(1300px);
 	// }
-	@include breakpoint(max-width 1070px){
+	@include breakpoint(max-width 1300px){
 		@include container(95%);
 	}
 	@include breakpoint($peasant){
 		@include container(100%);
 	}
+}
+
+section {
+	@include container(100%);
+}
+.left-right{
+	@include container(100%);
+	@include v-spacing(0,2em);
+	.left{
+		float: left;
+		@include span(7.7);
+		@include breakpoint($peasant){
+			@include span(12);
+		}
+	}
+	.right{
+		float: left;
+		@include push(.3 of 12);
+		@include span(4);
+		@include mobile;
+		@include breakpoint($peasant){
+			@include v-spacing(1em);
+		}
+	}
+}
+.embed-container{
+	@include v-spacing(2em,2em);
 }

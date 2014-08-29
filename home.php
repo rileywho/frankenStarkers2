@@ -15,17 +15,17 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<section>
+<section class="body">
 	<article class="intro">
-		<p>Graphic designer with a strong focus on user experience and front-end development.</p>
+		<h4>Hello. I'm a graphic designer and front-end developer.</h4>
 	</article>
 </section>
-<section id="root">
+<section class="body" id="root">
 	<?php if ( have_posts() ): ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 				<article class="work-links">
 					<a href="<?php the_permalink(); ?>">
-						<div class="cover"><p><?php the_field('title'); ?></p></div>
+						<div class="cover"><div><p><?php the_field('title'); ?></p></div></div>
 						<figure>
 	 						<?php 
 						  $image = get_field('home_img');

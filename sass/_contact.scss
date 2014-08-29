@@ -1,11 +1,16 @@
 /* Contact Styles */
 
 .about {
-	margin: 10px 0 50px 0;
-	@include span(6);
+	@include span(4);
+	@include mobile;
+}
+.skills{
+	@include span(4);
+	@include mobile;
 }
 .contact-info {
-	@include span(6);
+	@include span(4);
+	@include mobile;
 }
 .profile-img {
 	@include span(6 at 7);
