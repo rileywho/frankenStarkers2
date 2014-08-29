@@ -328,10 +328,23 @@ section {
         float: left;
         padding-left: 0.83333%;
         padding-right: 0.83333%; } }
-  /* line 41, ../sass/_layout.scss */
+    /* line 40, ../sass/_layout.scss */
+    .left-right .left img {
+      float: left;
+      border: 1px #999999 solid;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 41.66667%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      margin-left: 4.16667%;
+      padding: 0px; }
+  /* line 48, ../sass/_layout.scss */
   .left-right .right {
     float: left;
-    margin-left: 2.5%;
+    margin-left: 0.83333%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -340,7 +353,7 @@ section {
     padding-left: 0.83333%;
     padding-right: 0.83333%; }
     @media (max-width: 650px) {
-      /* line 41, ../sass/_layout.scss */
+      /* line 48, ../sass/_layout.scss */
       .left-right .right {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -352,12 +365,12 @@ section {
         margin-left: 4.16667%;
         margin-right: 4.16667%; } }
     @media (max-width: 650px) {
-      /* line 41, ../sass/_layout.scss */
+      /* line 48, ../sass/_layout.scss */
       .left-right .right {
         margin-top: 1.45em;
         margin-bottom: 0px; } }
 
-/* line 51, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .embed-container {
   margin-top: 2.9em;
   margin-bottom: 2.9em; }

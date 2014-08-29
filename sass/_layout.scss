@@ -37,10 +37,17 @@ section {
 		@include breakpoint($peasant){
 			@include span(12);
 		}
+		img{
+			float: left;
+			border: 1px $brand-primary-light solid;
+			@include span(5);
+			@include push(.5);
+			padding: 0px;
+		}
 	}
 	.right{
 		float: left;
-		@include push(.3 of 12);
+		@include push(.1 of 12);
 		@include span(4);
 		@include mobile;
 		@include breakpoint($peasant){
