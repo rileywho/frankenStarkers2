@@ -170,7 +170,7 @@ img {
 /* line 6, ../sass/_images.scss */
 .max-img {
   margin: 0 auto;
-  max-width: 700px; }
+  max-width: 900px; }
 
 /* Home page on hover covers */
 /* line 11, ../sass/_images.scss */
@@ -253,34 +253,34 @@ html, body {
     clear: both; }
 
 /* line 14, ../sass/_layout.scss */
-.body, .pr-intro, .pr-content, .pr-problem div {
-  max-width: 1300px;
+.body, .pr-intro, .pr-content, .pr-problem div, .pr2-content {
+  max-width: 1160px;
   margin-left: auto;
   margin-right: auto; }
   /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
-  .body:after, .pr-intro:after, .pr-content:after, .pr-problem div:after {
+  .body:after, .pr-intro:after, .pr-content:after, .pr-problem div:after, .pr2-content:after {
     content: " ";
     display: block;
     clear: both; }
   @media (max-width: 1300px) {
     /* line 14, ../sass/_layout.scss */
-    .body, .pr-intro, .pr-content, .pr-problem div {
+    .body, .pr-intro, .pr-content, .pr-problem div, .pr2-content {
       max-width: 95%;
       margin-left: auto;
       margin-right: auto; }
       /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
-      .body:after, .pr-intro:after, .pr-content:after, .pr-problem div:after {
+      .body:after, .pr-intro:after, .pr-content:after, .pr-problem div:after, .pr2-content:after {
         content: " ";
         display: block;
         clear: both; } }
   @media (max-width: 650px) {
     /* line 14, ../sass/_layout.scss */
-    .body, .pr-intro, .pr-content, .pr-problem div {
+    .body, .pr-intro, .pr-content, .pr-problem div, .pr2-content {
       max-width: 100%;
       margin-left: auto;
       margin-right: auto; }
       /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
-      .body:after, .pr-intro:after, .pr-content:after, .pr-problem div:after {
+      .body:after, .pr-intro:after, .pr-content:after, .pr-problem div:after, .pr2-content:after {
         content: " ";
         display: block;
         clear: both; } }
@@ -296,19 +296,27 @@ section {
     display: block;
     clear: both; }
 
-/* line 31, ../sass/_layout.scss */
+/* line 32, ../sass/_layout.scss */
+.embed-container {
+  margin-top: 2.9em;
+  margin-bottom: 2.9em; }
+
+/* LEFT RIGHT */
+/* line 37, ../sass/_layout.scss */
 .left-right {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 2.9em; }
+  margin-bottom: 4.35em;
+  /* Left END */
+  /* Right END */ }
   /* line 12, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
   .left-right:after {
     content: " ";
     display: block;
     clear: both; }
-  /* line 34, ../sass/_layout.scss */
+  /* line 40, ../sass/_layout.scss */
   .left-right .left {
     float: left;
     -moz-box-sizing: border-box;
@@ -319,7 +327,7 @@ section {
     padding-left: 0.83333%;
     padding-right: 0.83333%; }
     @media (max-width: 650px) {
-      /* line 34, ../sass/_layout.scss */
+      /* line 40, ../sass/_layout.scss */
       .left-right .left {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -328,23 +336,10 @@ section {
         float: left;
         padding-left: 0.83333%;
         padding-right: 0.83333%; } }
-    /* line 40, ../sass/_layout.scss */
-    .left-right .left img {
-      float: left;
-      border: 1px #999999 solid;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 41.66667%;
-      float: left;
-      padding-left: 0.83333%;
-      padding-right: 0.83333%;
-      margin-left: 4.16667%;
-      padding: 0px; }
-  /* line 48, ../sass/_layout.scss */
+  /* line 47, ../sass/_layout.scss */
   .left-right .right {
     float: left;
-    margin-left: 0.83333%;
+    margin-left: 2.5%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -353,7 +348,7 @@ section {
     padding-left: 0.83333%;
     padding-right: 0.83333%; }
     @media (max-width: 650px) {
-      /* line 48, ../sass/_layout.scss */
+      /* line 47, ../sass/_layout.scss */
       .left-right .right {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -365,16 +360,27 @@ section {
         margin-left: 4.16667%;
         margin-right: 4.16667%; } }
     @media (max-width: 650px) {
-      /* line 48, ../sass/_layout.scss */
+      /* line 47, ../sass/_layout.scss */
       .left-right .right {
         margin-top: 1.45em;
         margin-bottom: 0px; } }
+  /* line 57, ../sass/_layout.scss */
+  .left-right .screen-img img {
+    float: left;
+    border: 1px #e0e0e0 solid;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 47.08333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding: 0px; }
+  /* line 63, ../sass/_layout.scss */
+  .left-right .screen-img picture:last-child img {
+    margin-left: 5.83333%; }
 
-/* line 58, ../sass/_layout.scss */
-.embed-container {
-  margin-top: 2.9em;
-  margin-bottom: 2.9em; }
-
+/* LEFT RIGHT END */
 /* Header */
 /* line 2, ../sass/_header.scss */
 header {
@@ -650,7 +656,6 @@ nav {
 
 /* line 16, ../sass/_portfolio-1.scss */
 .pr-intro {
-  border-bottom: 1px #999999 solid;
   padding-top: 1.45em;
   padding-bottom: 1.45em;
   margin-top: 1.45em;
@@ -661,7 +666,7 @@ nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 33.33333%;
+  width: 41.66667%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%; }
@@ -750,11 +755,12 @@ nav {
 
 /* line 54, ../sass/_portfolio-1.scss */
 .pr-problem {
+  display: none;
   margin-top: 0.725em;
   margin-bottom: 0.725em;
   padding-top: 0em;
   padding-bottom: 0em; }
-  /* line 59, ../sass/_portfolio-1.scss */
+  /* line 60, ../sass/_portfolio-1.scss */
   .pr-problem div article {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -764,7 +770,7 @@ nav {
     padding-left: 0.83333%;
     padding-right: 0.83333%; }
     @media (max-width: 650px) {
-      /* line 59, ../sass/_portfolio-1.scss */
+      /* line 60, ../sass/_portfolio-1.scss */
       .pr-problem div article {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -775,6 +781,30 @@ nav {
         padding-right: 0.83333%;
         margin-left: 4.16667%;
         margin-right: 4.16667%; } }
+
+/* line 3, ../sass/_portfolio-2.scss */
+.pr2-content > div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-top: 1.45em;
+  margin-bottom: 1.45em; }
+/* line 8, ../sass/_portfolio-2.scss */
+.pr2-content > h4 {
+  padding: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 16.66667%;
+  margin-right: 16.66667%; }
 
 /* Just in case */
 /* Welcome to Compass. Use this file to write IE specific override styles.

@@ -1,8 +1,8 @@
 
-.pr-header{
+.pr-header {
 	@include v-spacing(1em, 1em, padding);
 }
-.pr-header-img{
+.pr-header-img {
 	max-width: 1000px;
 	// @include span(8);
 	@include push(2 of 12);
@@ -13,16 +13,16 @@
 		@include push(0 of 12); 
 	}
 }
-.pr-intro{
+.pr-intro {
 	@extend .body;
 	// border-top: 1px $brand-primary-light solid;
-	border-bottom: 1px $brand-primary-light solid;
+	// border-bottom: 1px $brand-primary-light solid;
 	@include v-spacing(1em,1em,padding);
 	@include v-spacing(1em,1em);
 }
 .pr-description {
-	@include span(4);
-	@include breakpoint($soldier){
+	@include span(5);
+	@include breakpoint($soldier) {
 		@include span(6);
 	}
 	@include mobile;
@@ -30,7 +30,7 @@
 .pr-client,.pr-details,.pr-team {
 	@include push(0);
 	@include span(2);
-	@include breakpoint($soldier){
+	@include breakpoint($soldier) {
 		@include span(3);
 	}
 	@include mobile;
@@ -52,6 +52,7 @@
 	}
 }
 .pr-problem {
+	display: none;
 	@include v-spacing(.5em,.5em);
 	@include v-spacing(0em,0em,padding);
 	div {

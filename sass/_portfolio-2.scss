@@ -1,0 +1,12 @@
+.pr2-content {
+	@extend .body;
+	> div {
+		@include span(4);
+		@include v-spacing(1em,1em);
+	}
+
+	> h4 {
+		padding: 0px;
+		@include layout-center(8);
+	}
+}
