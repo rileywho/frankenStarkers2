@@ -365,7 +365,7 @@ section {
         margin-top: 1.45em;
         margin-bottom: 0px; } }
   /* line 57, ../sass/_layout.scss */
-  .left-right .screen-img img {
+  .left-right .screen-img div {
     float: left;
     border: 1px #e0e0e0 solid;
     -moz-box-sizing: border-box;
@@ -376,8 +376,11 @@ section {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
     padding: 0px; }
-  /* line 63, ../sass/_layout.scss */
-  .left-right .screen-img picture:last-child img {
+    /* line 62, ../sass/_layout.scss */
+    .left-right .screen-img div img {
+      padding: 0px; }
+  /* line 66, ../sass/_layout.scss */
+  .left-right .screen-img div:last-child {
     margin-left: 5.83333%; }
 
 /* LEFT RIGHT END */

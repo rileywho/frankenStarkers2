@@ -54,13 +54,16 @@ section {
 		}
 	}/* Right END */
 	.screen-img{
-		img {
+		div{
 			float: left;
 			border: 1px #e0e0e0 solid;
 			@include span(5.65);
 			padding: 0px;
+			img {
+				padding: 0px;
+			}
 		}
-		picture:last-child img {
+		div:last-child{
 			@include push(.7);
 		}
 	}
