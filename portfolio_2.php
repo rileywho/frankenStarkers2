@@ -17,7 +17,8 @@ Description: This part is optional, but helpful for describing the Post Template
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 	
-	<?php include($DOCUMENT_ROOT."parts/custom/pf-header-1.php"); ?>
+	
+	<?php include(TEMPLATEPATH . '/parts/custom/intro-2.php'); ?>
 	<section class="pr-intro">
 		<article class="pr-description">
 			<h4 class="font-h-small">Project Overview</h4>
